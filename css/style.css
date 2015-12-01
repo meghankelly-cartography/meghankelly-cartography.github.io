@@ -1,0 +1,55 @@
+.portfolio-thumbnail{
+	background-color: white;
+	border-width: 10px;
+	border-style: solid;
+	border-color: black;
+
+}
+
+.logo{
+	background-color: white;
+	border-width: 10px;
+	border-style: solid;
+	border-color: white;
+}
+
+.main{
+	background-color: white;
+	border-width: .5px;
+	border-style: solid;
+	border-color: black;
+}
+.jumbotron{
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+
+}
+
+.navbar-toggle{
+	background-color: white;
+}
+
+.title{
+	padding-top: 70px;
+}
+.header{
+	padding-top: 70px;
+}
+
+p {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   color: gray;
+}
+
+h {font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   color: black;
+}
+
+
