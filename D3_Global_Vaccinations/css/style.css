@@ -1,0 +1,177 @@
+.main{
+	background-color: white;
+	border-width: .5px;
+	border-style: solid;
+	border-color: black;
+}
+
+.jumbotron{
+	padding-top: 15px;
+	padding-bottom: 500px;
+}
+
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+}
+
+.navbar-brand{
+	padding-left:10px;
+	padding-top:15px;
+}
+
+.page-header{
+	padding-top: 50px;
+}
+
+#entry{
+	padding-left: 40%;
+	padding-top: 300px;
+}
+
+#title{
+	padding-left:30px;
+	padding-top:45px;
+}
+
+#title_p{
+	padding-left:30px;
+}
+
+#sources{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    color: gray;
+    line-height: 150%;
+}
+
+
+#panel {
+    width: 36%;
+    height: 300px;
+    padding-left:25px;
+    padding-right:25px;
+	padding-top:20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    line-height: 42px;
+}
+
+h1 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+   	color: black;
+    padding-left: 5%;
+}
+
+h2 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+   	color: black;
+   	padding-left: 5%;
+}
+
+h4 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+   	color: black;
+   	text-align: center;
+
+}
+
+p {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   color: gray;
+   line-height: 200%;
+   padding-left: 3%;
+}
+
+.title {
+   	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: absolute;
+    top: 28%;
+    left: 82%;
+    z-index: 10;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 4px #999;
+}
+
+option {
+    font-weight: normal;
+}
+
+.map {
+    /* border: thin solid gray;*/
+    padding-left: 0;
+}
+
+.chart {
+    float: center;
+    background-color: white;
+    /*border: medium solid red;*/
+    float: center;
+    margin-top: 0px;
+    margin-left: 38%;
+	padding-left: 0%;
+
+}
+
+.numbers {
+    fill: red;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.chartTitle {
+
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	text-align: center;
+    fill: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 40%;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #999;
+    stroke-width: 0px;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 0.8em;
+    color: red;
+}
+
+.infolabel {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    position: absolute;
+    text-align: center;
+    min-height: 70px;
+    min-width: 110px;
+    color: #efeff0;
+    background-color: rgba(51,51,51,.95);
+    padding: 0;
+    padding-bottom: 5px;
+    top: -75px;
+}
+
+.infolabel h1 {
+    margin: 0 20px 0 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 1em;
+}
