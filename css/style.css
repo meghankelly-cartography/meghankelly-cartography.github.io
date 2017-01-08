@@ -1,17 +1,21 @@
 .portfolio-thumbnail{
 	background-color: white;
-	border-width: 10px;
+	border-width: 0px;
 	border-style: solid;
 	border-color: black;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, .1);
+
 
 }
 .portfolio-mapbox{
 	background-color: white;
-	border-width: 10px;
+	border-width: 0px;
 	border-style: solid;
 	border-color: black;
 	width: 100%;
 	height: 100%;
+	box-shadow: 4px 4px 16px rgba(0, 0, 0, .1);
+
 
 }
 
