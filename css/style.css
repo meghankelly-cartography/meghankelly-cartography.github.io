@@ -1,3 +1,16 @@
+.free_write_indent{
+	text-indent: 25px;
+	padding-top: 20px;
+}
+
+.back_top{
+	text-align: right!important;
+}
+
+.teaching_outline{
+	padding-top: 30px;
+}
+
 .portfolio-thumbnail{
 	background-color: white;
 	border-width: 0px;
