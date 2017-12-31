@@ -1,3 +1,80 @@
+.Meghan{
+	padding-top: 10px;
+
+}
+
+.projectImage{
+	padding-bottom: 50px;
+}
+
+.projectPage{
+	text-align: center;
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+.projectText{
+	text-align: justify;
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-bottom: 25px;
+}
+.indexText{
+	text-align: justify;
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+.img_test{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.1);
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 20px;
+}
+
+.column img {
+  margin-top: 35px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+.icon-bar{
+	color: green;
+}
+
+#navText {
+	color: black;
+
+}
+
+
 #icons {
 	width: 150px;
 
@@ -16,15 +93,6 @@
 	padding-top: 20px;
 }
 
-.portfolio-thumbnail{
-	background-color: white;
-	border-width: 0px;
-	border-style: solid;
-	border-color: black;
-    box-shadow: 4px 4px 16px rgba(0, 0, 0, .1);
-
-
-}
 .portfolio-mapbox{
 	background-color: white;
 	border-width: 0px;
@@ -53,7 +121,8 @@
 }
 .jumbotron{
 	padding-top: 15px;
-	padding-bottom: 20px;
+	padding-bottom: 0px;
+	background-color: white;
 }
 
 .navbar{
@@ -62,8 +131,13 @@
 
 }
 
+.navbar-brand{
+	color: #2e2e2e;
+	padding-left: 50px;
+}
+
 .navbar-toggle{
-	background-color: white;
+	background-color: #F6F6F6;
 }
 
 .title{
@@ -71,17 +145,29 @@
 }
 .header{
 	padding-top: 70px;
+	padding-left: 35%;
+}
+.header2{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 35%;
 }
 
 p {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
    font-weight: 300;
-   color: gray;
+   font-size: 16px !important;
+   color: #424242;
 }
 
-h {font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+h1, h2, h3, h4{font-family: Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
-   color: black;
+   color: #292929;
+}
+
+h1{
+	padding-bottom: 15px;
+
 }
 
 

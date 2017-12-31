@@ -16,67 +16,74 @@
 	</head>
 
 	<body>
+		<!--put your external script links here-->
+		<script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-83579586-1', 'auto');
+			ga('send', 'pageview');
+		</script>
 	
-		<nav class="navbar navbar-default navbar-fixed-top main-navbar navbar navbar-inverse"> <!--Creates navbar-->
-		<div class="container">
-			<div class="navbar-header"> <!--Creates the navbar header-->
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span> <!--Used for screen readers for accessibility-->
-					<span class="glyphicon glyphicon-menu-hamburger"></span>
-					<span class="menu">Menu</span>
-				</button> <!--Hamburger button for smaller devices-->
+	<!--Collapsing NavBar --> 
+	    <nav class="navbar">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span> 
+	          </button>
+	          
+			<a class="navbar-brand" href="index.html"><b>Meghan Kelly</b> Maps</a>	
 
-<a class="navbar-brand" href="index.html">Meghan Kelly Cartography</a>			
-</div>
+	        </div>
 
-			<div id="navbar" class="collapse navbar-collapse"> <!--Links in navbar-->
-				<ul class="nav navbar-nav"> <!-- Unordered list for links on navbar -->
-					<li role="presentation"><a href="index.html">Home</a></li>
-  					<li role="presentation"><a href="aboutme.html">About Me</a></li>
-  					<li role="presentation" class="active"><a href="research.html">Research</a></li>
-  					<li role="presentation"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Portfolio<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-					<li><a href="portfolio.html"><b>My Portfolio</b></a></li>
-       				<li><a href="assets/BordersAtlas.pdf">Mapping Borders</a></li>
-       				<li><a href="WoodenShips.html">Wooden Ships</a></li>
-                	<li><a href="Interactives.html">Interactive Maps</a></li>
-                	<li><a href="CollectivelyMappingBorders.html">Collectively Mapping Borders</a></li>
-					<li><a href="Syria.html">Syria: Europe's Problem?</a></li>
-                    <li><a href="WorldMap.html">World Map</a></li>  
-                    <li><a href="Terrain.html">Terrain Representation</a></li>
-                    <li><a href="HumanTrafficking.html">Human Trafficking</a></li>
-                    <li><a href="DesignChallenge.html">Design Challenge</a></li>
-                    <li><a href="Crimea.html">Resources in Crimea</a></li>
-                </ul>
-            </li>
- 			<li role="presentation"><a href="teaching.html">Teaching</a></li>
+	        <div class="collapse navbar-collapse navbar-right" id="myNavbar NavBlack">
+	            <ul class="nav navbar-nav navText">
+	                <li><a href="maps.html" id="navText">Maps</a></li>
+	                <li><a href="research.html" id="navText">Research</a></li>
+	                <li><a href="teaching2.html" id="navText">Teaching</a></li>
+	            </ul>
+	        </div>
+	      </div>
+	    </nav>
+	<!--end of NavBar --> 
 
-				</ul>
-			</div> <!-- end .navbar-collapse -->
-		</div> <!-- end .container -->
-	</nav> <!-- end navigation bar -->
-		
-		<div class="container">
-			<div class="row header">
-				<div class="col-md-12">
-					<h1 class="page-header">Research</h1>
-				</div>
-			</div>
-		</div>
-		
+
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<p>More to come! Stay tuned! An abbreviated summary of my research is available on my curriculum vitae <a href="assets/MeghanKellyCV_June2017.pdf">here</a>.</p>
+				<div class="col-md-12 projectPage">
+
+					<h1>Research</h1>
+
 				</div>
 			</div>
 		</div>
-		
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 projectText">
+
+				<p>Research...</p>
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+
 
 	<footer>
 		<div class="jumbotron">
 			<div class="container">
-				<h3>Meghan Kelly</h3>
+				<h3><b>Meghan Kelly<b></h3>
 				<h4>University of Wisconsin–Madison</h4>
 				<h4>Email: mkelly22@wisc.edu</h4>
 				<h4>Twitter: <a href="https://twitter.com/meghankellymaps?lang=en">@meghankellymaps</a></h4>
@@ -85,9 +92,6 @@
 
      </footer>
 
-<!--put your external script links here-->
-<script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="js/drop.js"> </script>
 
 	</body>
