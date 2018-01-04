@@ -1,3 +1,9 @@
+.tabs {
+    text-align: center;
+    padding-top: 0px;
+	padding-bottom: 25px;
+}
+
 .Meghan{
 	padding-top: 10px;
 
@@ -63,10 +69,8 @@
   }
 }
 
-
-
-.icon-bar{
-	color: green;
+.hamburger{
+	background-color: #292929 !important;
 }
 
 #navText {
@@ -137,8 +141,9 @@
 }
 
 .navbar-toggle{
-	background-color: #F6F6F6;
+	background-color: white;
 }
+
 
 .title{
 	padding-top: 70px;
@@ -152,11 +157,7 @@
 	padding-bottom: 25px;
 	padding-left: 35%;
 }
-.header3{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 31%;
-}
+
 
 p {
    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 

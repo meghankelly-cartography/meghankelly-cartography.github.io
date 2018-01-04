@@ -16,730 +16,114 @@
 	</head>
 
 	<body>
+		<!--put your external script links here-->
+		<script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	
-		<nav class="navbar navbar-default navbar-fixed-top main-navbar navbar navbar-inverse"> <!--Creates navbar-->
-		<div class="container">
-			<div class="navbar-header"> <!--Creates the navbar header-->
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span> <!--Used for screen readers for accessibility-->
-					<span class="glyphicon glyphicon-menu-hamburger"></span>
-					<span class="menu">Menu</span>
-				</button> <!--Hamburger button for smaller devices-->
+	<!--Collapsing NavBar --> 
+	    <nav class="navbar">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span> 
+	          </button>
+	          
+			<a class="navbar-brand" href="index.html"><b>Meghan Kelly</b> Maps</a>	
 
-<a class="navbar-brand" href="index.html">Meghan Kelly Cartography</a>			
-</div>
+	        </div>
 
-			<div id="navbar" class="collapse navbar-collapse"> <!--Links in navbar-->
-				<ul class="nav navbar-nav"> <!-- Unordered list for links on navbar -->
-					<li role="presentation"><a href="index.html">Home</a></li>
-  					<li role="presentation"><a href="aboutme.html">About Me</a></li>
-  					<li role="presentation" class=""><a href="research.html">Research</a></li>
-  					<li role="presentation"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Portfolio<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-					<li><a href="portfolio.html"><b>My Portfolio</b></a></li>
-       				<li><a href="assets/BordersAtlas.pdf">Mapping Borders</a></li>
-       				<li><a href="WoodenShips.html">Wooden Ships</a></li>
-                	<li><a href="Interactives.html">Interactive Maps</a></li>
-                	<li><a href="CollectivelyMappingBorders.html">Collectively Mapping Borders</a></li>
-					<li><a href="Syria.html">Syria: Europe's Problem?</a></li>
-                    <li><a href="WorldMap.html">World Map</a></li>  
-                    <li><a href="Terrain.html">Terrain Representation</a></li>
-                    <li><a href="HumanTrafficking.html">Human Trafficking</a></li>
-                    <li><a href="DesignChallenge.html">Design Challenge</a></li>
-                    <li><a href="Crimea.html">Resources in Crimea</a></li>
-                </ul>
-            </li>
- 			<li role="presentation" class="active"><a href="teaching.html">Teaching</a></li>
-
-				</ul>
-			</div> <!-- end .navbar-collapse -->
-		</div> <!-- end .container -->
-	</nav> <!-- end navigation bar -->
-		
-		<div class="container">
-			<div class="row header">
-				<div class="col-md-12">
-					<h1 class="page-header">Teaching</h1>
-				</div>
-			</div>
-		</div>
-
-		
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="thumbnail portfolio-thumbnail">
-						<a href="aboutme.html">
-							<img src="assets/teaching.png"
-							alt="" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-8">
-					<!-- <h2>Transparent Teaching Experiment</h2> -->
-
-					<p>This semester I am teaching <a href="https://geography.wisc.edu/courses/">Geography 572: Graphic Design in Cartography</a>. G572 is an advanced mapping course at the University of Wisconsin—Madison. I'm using this online format to record, take notes, and to provide resources. I am only providing my own personally developed content. You'll find my teaching philosophy, assigned readings, free write prompts, lecture activites, and reflections below. I would love any feedback or suggestions too! Stay tuned for more as the semester unfolds!
-					</p>
-
-					<p>Check out my additional teaching experience on my <a href="assets/MeghanKellyCV_June2017.pdf">curriculum vitae</a>.</p>
-
-					<a name="Top"></a>
-					<p><b><a href="#Overview">Overview</a></b></p>
-					<p><b><a href="#Learning_Objectives">Learning Objectives</a></b></p>
-					<p><b><a href="#Week1">Week 1: Welcome and History of Cartography</a></b></p>
-					<p><b><a href="#Week2">Week 2: Visual Storytelling and Mapping</a></b></p>
-					<p><b><a href="#Week3">Week 3: Visual Storytelling and Data Journalism</a></b></p>
-					<p><b><a href="#Week4">Week 4: Perception and Visual Enhancement</a></b></p>
-					<p><b><a href="#Week5">Week 5: Visual Complexity and Terrain</a></b></p>
-					<p><b><a href="#Week6">Week 6: NACIS Recap</a></b></p>
-					<p><b><a href="#Week7">Week 7: Cognition and Semiotics</a></b></p>
-					<p><b><a href="#Week8">Week 8: Art and Aesthetics</a></b></p>
-					<p><b>Week 9: Persuasive Maps</b></p>
-					<p><b>Week 10: Critical Cartography</b></p>
-					<p><b>Week 11: Feminist Cartographies</b></p>
-					<p><b>Final Projects</b></p>
-
-				</div>
-
-			</div>
-		</div>
+	        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+	            <ul class="nav navbar-nav navText">
+	                <li><a href="maps.html" id="navText">Maps</a></li>
+	                <li><a href="research.html" id="navText">Research</a></li>
+	                <li><a href="teaching.html" id="navText">Teaching</a></li>
+	            </ul>
+	        </div>
+	      </div>
+	    </nav>
+	<!--end of NavBar --> 
 
 		<div class="container">
 			<div class="row">
-				
-				<div class="col-md-4">
+				<div class="col-md-12 projectPage">
 
-<!-- 					<div class="thumbnail portfolio-thumbnail">
-						<a href="Syria.html">
-							<img src="assets/Infographic.png"
-							alt="" />
-						</a>
-					</div> -->
-		
-				</div>
-
-				<a name="Overview"></a>
-				<div class="col-md-8">
-					
-					<h2 class="page-header">Overview <i>Graphic Design in Cartography </i></h2>
-
-					<p>Geography 572 (G572) provides an in-depth examination of advanced themes and
-					topics in cartographic design. G572 is an extension of the G370 course, but with a
-					focus on cartographic design for the web rather than print and the intersection of
-					cartographic design with graphic design, web design, and the digital humanities.
-					Specifically, G572 integrates <i>theory</i> (new ways of critically examining cartography) and <i>practice</i> (cartographic implementation) emphasizing the design of webdelivered static maps, rather than the design of interfaces for manipulating these maps.
-					</p>
-
-					<p>My current syllabus and course schedule is available <a href="assets/Fall2017_572syllabus.pdf">here</a>.</p>
-
-					<h4 class="teaching_outline">Inclusion and Engagement</h4>
-					<p>Inclusion and engagement are key components of my teaching philosophy. As such, we embrace all students, including and
-					especially: people of color, LGBTQIA people, non-citizen residents (of any status) and
-					Native Americans, Muslims, Jews, and members of all other faiths, atheists &
-					agnostics, women, disabled people, and disaffected people. We will actively work to
-					ensure that everyone is welcome and is invited to share their perspectives. We will
-					respect and support one another. </p>
-
-					<p>I'm still working on fostering an inclusive environment. Below are my current strategies and I would love suggestions!</p>
-
-					<ul>
-						<li><p><i>Classroom layout:</i> I arrange the seats into a circle / u-shape.</p></li>
-						<li><p><i>Name plates:</i> Each students has a name card on displayed on her/his/their desk.</p></li>
-						<li><p><i>Remembering names:</i> I had out each name plate at the beginning of class.</p></li>
-						<li><p><i>Avoiding the podium:</i> I limit my time in front of the class lecturing. I prefer to sit in the circle with my students.</p></li>
-						<li><p><i>Preparation:</i> Students are asked to come prepared to class having read/viewed the assigned material. At the beginning of class, I provide prompts and have students take a few moments to write down their thoughts on the assigned readings. I hope this helps spur conversation and increase engagement with the material</p>
-					</ul>
-
-					<h4 class="teaching_outline">Readings</h4>
-
-					<p>Students are asked to complete a series of readings before class on Wednesdays. The readings address the topic or lens for week in a variety of ways. My goal is to combine academic articles with additional and alternative sources of knowledge. For example, I may ask students to read blog posts, tutorials, and news articles. I also aim to incorporate other multimedia sources like videos or to review existing maps.</p>
-
-
-					<h4 class="teaching_outline">Free Write and Discussion</h4>
-						
-					<p>As mentioned above, students are assigned reading material that directly relates to the cartographic theme of
-					the week. In class, they are asked to write a short reflection about the assigned
-					readings and theme of the week. I provide questions or prompts to get students
-					engaged in thinking and writing. To receive full credit, students come to class prepared having read or
-					watched the assigned materials. Additionally, the free writes encourage and help
-					guide class discussion.</p>
-
-					<h4 class="teaching_outline">Objects</h4>
-
-					<p>In this class, students help curate course material by submitting map
-					examples, graphics, articles, videos, or material related to the course. I provide
-					prompts and ask students to submit a related object each week before class (usually Fridays).
-					Students submit each object online and come to
-					class prepared to talk about their objects!</p>
-
-					<h4 class="teaching_outline">Lecture Activities</h4>
-					
-					<p>Lecture activities take a variety of shapes, including class
-					discussions of readings, critiques, peer feedback, group work, and mapping
-					exercises. Fridays are reserved for activities and are generally held in the lab room. The goal is to learn from each other and learn from “doing”.
-					In mapping exercises, for example, students will put cartographic themes from assigned
-					readings, discussions, and my lectures to practice. Additionally, extra lab experience
-					benefits their cartographic skills development.</p>
-
-					<p>I should note that the activities mentioned above are in addition to traditional lab assignments. I also save time for a bit of lecture. I'm not going completely rogue (yet)!</p>
-
-
-					<p class="back_top"><a href="#top">Back to Top</a></p>
+					<h1><b>Teaching</b></h1>
 
 				</div>
+			</div>
+		</div>	
 
-				<a name="Learning_Objectives"></a>
-				
-				<div class="col-md-4">
-				
-				</div>
 
-				<div class="col-md-8">
-				
-					<h2 class="page-header">Learning Objectives</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 projectText">
 
-					<ul>
-						<li><p><i>Critically examine</i> maps and mapping through transdisciplinary lenses by
-						reading, writing, and actively discussing</p></li>
+				<p>Teaching has been instrumental in my life as a cartographer and geographer! I've been surrounded by incredible teachers throughout my undergraduate and graduate work and I hope I've picked up a few things from them along the way. I've had an array of teaching experiences in- and outside of the classroom, including TA and lecture opportunities along with community driven teaching opportuntities as a <a href="">MapTime Madison</a> organizer.</p>
 
-						<li><p><i>Translate</i> cartographic theory into cartographic practice through process,
-						experimentation, critique, and feedback</p></li>
-
-						<li><p><i>Enhance</i> your cartographic skillset through advanced cartographic techniques
-						and technologies</p></li>
-
-						<li><p><i>Create</i> an online web portfolio to show off your work</p></li>
-
-						<li><p><i>Discover</i> your cartographic self and what mapping means to you</p></li>
-
-					</ul>
-
-					<p class="back_top"><a href="#top">Back to Top</a></p>
-
+				<p>The <a href="">UW–Madison Cartography Lab </a>has provided an amazing learning enviroment where I've been able to contribute to (and gain) mentorship from peers and colleagues. I hope to bring a similar environment wherever I end up. Teaching is hands down one of the most rewarding jobs. It has also greatly enhanced and pushed my research in new directions. You can find out more on my teaching experience <a href="assets/MeghanKellyCV_September2017.pdf">here</a>.</p>
 
 				</div>
-
-
-				<a name="Week1"></a>
-				
-				<div class="col-md-4">
-
-					<div class="thumbnail portfolio-thumbnail">
-						<a href="teaching.html">
-							<img src="assets/Map_word_cloud.png"
-							alt="" />
-						</a>
-					</div>
-				
-				</div>
-				<div class="col-md-8">
-			
-					<h2 class="page-header">Week 1 <i>Welcome and a (Brief) History of Cartography</i></h2>
-<!-- 
-					<p>Summary text
-					</p> -->
-
-					<h4 class="">Readings</h4>
-
-						<p><a href="https://www.amazon.com/Mapping-Critical-Introduction-Cartography-GIS/dp/1405121734">"How Mapping Became Scientific" in <i>Mapping: A Critical Introduction to Cartography and GIS</i></a>, <i>Jeremy Crampton</i></p>
-
-						<p><a href="https://www.amazon.com/Mapping-Critical-Introduction-Cartography-GIS/dp/1405121734">"The Political History of Cartography Deconstructed" in <i>Mapping: A Critical Introduction to Cartography and GIS</i></a>, <i>Jeremy Crampton</i></p>
-
-						<p><a href="https://www.citylab.com/design/2016/03/women-in-cartography-early-north-america/471609/">The Hidden Histories of Maps Made By Women: Early North America, </a><i>Laura Bliss</i>, CityLab</p>
-
-						<p><a href="https://northlandia.wordpress.com/2016/11/01/a-nodapl-map/">#NoDAPL</a><i>, Carl Sack</i></p>
-
-
-					<h4 class="teaching_outline">Free Write and Discussion</h4>
-						
-						<h4><i>Free Write #1</i></h4>
-
-						<ul>
-							<li><p>What are your expectations for the course?</p></li>
-							<li><p>What are your career goals?</p></li>
-							<li><p>Are there any topics from Geography 370 (Intro to Cartography) that you feel unsure about and would like a review?</p></li>
-							<li><p>Is there anything I should know about you before the semester begins (i.e. accommodations, conference travel, expected absences)?</p></li>
-						</ul>
-
-						<h4 ><i>Free Write #2</i></h4>
-
-						<ul>
-							<li><p>What was familiar or a review about the histories presented in the readings? What was new?</p></li>
-							<li><p>What and who was missing from the readings?</p></li>
-							<li><p>To what extent, does Robinson’s scientific approach to mapping and the communication model influence cartography today?</p></li>
-							<li><p>How is cartography changing? Who’s in control of mapping?</p></li>
-						</ul>
-
-					<h4 class="teaching_outline">Objects</h4>
-						<h4><i>Defining the Map</i></h4>
-
-						<p>By default, maps are political and powerful objects. As a result, the very definition of a map matters. To receive full credit for this assignment, I asked students to submit to a discussion post a definition of a map. This can be in their own words or can be borrown from someone else (as long as they give recognition).</p>
-
-						<p>Students then used these definitions in the Lecture Activity below.</p>
-
-					<h4 class="teaching_outline">Lecture Activity</h4>
-
-						<p>For this Lecture Activity, students were paired up to introduce and discuss their Object or map definitions. I asked them to compare similarities and difference in terminology as well as the connotations produced by each definition.</p>
-
-						<p><a href="assets/Fall2017_572_LectureActivities_Week1_MapDefinitions.pdf">Lecture Activity Handout</a></p>
-
-						<p>I combined all Objects or map definitions into one word cloud and as a class, we narrowed down a few working definition. The goal was not prescriptive. I wanted students to think about their own perspectives and the assumptions within their experiences as cartographers.</p>
-
-					<h4 class="teaching_outline">Notes and Reflections</h4>
-						<p>One of the best pieces of this class is the fact that it's an upper-level course. Everyone in class is in there for a reason. There's a mix of students from undergraduates to certificate students. They have all taken Intro to Cartography (Geog 370), but with varying teachers and varying perspectives. All in all, there is a ton of excitement! The students are ready to go!</p>
-
-						<p>The first day of class (Wednesday) was the typical "syllabus day". After going through course content and goals, we did a round of introductions and spent time on Free Write #1. This was a really good way to get to know students quickly without the pressure of verbal introductions.</p>
-
-						<p>On Friday, we jumped right into course material beginning with Free Write # 2. Class discussion on the assigned readings was a bit rough, but I think that might be a remnant of the first week of class. It's something to keep an eye on though. We then moved to the lab for this week's Lecture Activity. The best part of the Lecture Activity was the buzz of students talking and working together. Regardless of actvity's actually outcome, this was awesome to see!</p>
-
-					<p class="back_top"><a href="#top">Back to Top</a></p>
-
-
-				</div>
-
-				<a name="Week2"></a>
-				
-				<div class="col-md-4">
-
-					<div class="thumbnail portfolio-thumbnail">
-						<a href="Syria.html">
-							<img src="assets/Infographic.png"
-							alt="" />
-						</a>
-					</div>
-				
-				</div>
-
-				<div class="col-md-8">
-				
-					<h2 class="page-header">Week 2 <i>Visual Storytelling and Mapping</i></h2>
-
-
-					<h4 class="">Readings</h4>
-					
-						<p><a href="http://journals.sagepub.com/doi/abs/10.1177/0309132511423796">Cartography I: Mapping Narrative Cartography,</a> <i>Sébastien Caquard</i></p>
-
-						<p><a href="http://www.tandfonline.com/doi/abs/10.1559/152304008783475661">Framing the Days: Place and Narrative in Cartography</a>, <i>Margaret Pearce</i></p>
-						
-						<p><a href="https://www.nytimes.com/interactive/2014/07/03/world/middleeast/syria-iraq-isis-rogue-state-along-two-rivers.html">A Rogue State Along Two Rivers</a><i>, New York Times</i></p>
-
-						<p><a href="http://storymaps.esri.com/stories/2016/pearl-harbor/">An Infamous Day</a><i>, Esri Story Maps</i></p>
-
-						<p><a href="http://disasterresponse.maps.arcgis.com/apps/StorytellingSwipe/index.html?appid=c62112f6ba834227978d8f1cf2b6f5af">Hurricane Harvey Post Event Imagery</a><i>, Esri Disaster Response Program</i></p>
-
-
-					<h4 class="teaching_outline">Free Write and Discussion</h4>
-						
-						<h4 ><i>Free Write #3</i></h4>
-
-						<ul>
-							<li><p>How are maps and stories related?</p></li>
-
-							<li><p>Caquard differentiates grid maps and story maps. How are they similar or different?</p></li>
-
-							<li><p>What are your thoughts on the assigned maps from Pearce, The New York Times, and ESRI Story Maps? Do they tell stories?</p></li>
-	
-							<li><p>What narrative mapping techniques did Pearce use?</p></li>
-					</ul>
-
-					<h4 class="teaching_outline">Objects</h4>
-						
-						<h4><i>Story or Narrative Map</i></h4>
-
-						<p>Maps have a long and interconnected history with stories and narrative. Most recently, however, story maps, visual storytelling, and narrative have become buzz words in cartography and data journalism (among many other fields). For this Object assignment, I asked students to upload one of their favorite story maps, narrative maps, or any map incorporated into a story.</p>
-
-						<p>Students then used these map examples in the <i>Lecture Activity</i> below.</p>
-
-
-					<h4 class="teaching_outline">Lecture Activity</h4>
-						<p><a href="assets/Fall2017_572_LectureActivities_Week2_Storytelling.pdf">Lecture Activity Handout</a></p>
-						<p><a href="assets/Fall2017_572_LectureActivities_Week2_Grid.pdf">Lecture Activity Worksheet</a></p>
-						<p><a href="assets/Fall2017_572_LectureActivities_Week2_Grid_example.pdf">Lecture Activity Worksheet Example</a></p>
-
-
-
-					<h4 class="teaching_outline">Notes and Reflections</h4>
-						<p>I really had fun this week in class because my work has always been inspired by the inclusion of stories and narratives in cartography. I'm particularly inspired by Sébastien Caquard and Margaret Pearce's (my former advisor at the University of Kansas) work. Discussion with students this week was easy. Stories and narrative are buzz words in contemporary cartography and whether or not they read the material, they had plenty to say. Students also seemed very interested in the story-esque maps that I provided as assigned readings. We explored the similarites and differences in narrative and storytelling techniques across the examples. We then dove more closely into Margaret Pearce's techniques in <i>Framing the Days</i>.</p>
-
-						<p>One pedagogical question arose this week, "what is the role of required reading?" I don't have any exams, but I do have short quizzes on all readings, discussion, and lecture material. The only way I really gauge their reading, however, is through Free Writes and discussion in class. I try to avoid completely regurgitating the readings in my lecture. In some ways, students just "miss out" on related material if they haven't read.</p>
-
-						<p>Furthermore, I try to provide at least two Free Write prompts that are directly related to the assigned readings and two that are more open ended. This allows those who didn't read to participate and engage in thought, in writing, and in conversation. I personally think the readings supplement and add to the discussion in numerous ways, but I'm definitely bias given my interest in the material. I hope to provide relevant and interesting readings from various outlets (not just academic articles, but blogs, maps, news articles, tutorials, videos, etc.) I know others who do not have any assigned readings. I know other who don't assign any readings or text. Long story short, should I care if students complete the readings?</p>
-
-						<p>The Object assignment and Lecture Activity this week asked students to submit their favorite story or narrative map examples. We then explored and documented specific storytelling and cartographic techniques that were used in the map examples. Students worked in groups of two or three, which I <i>highly</i> suggest. Students jumped right into the Lecture Activity and were able to talk through the map examples together. Also, this cuts grading in half, which is a major win for me! I plan on creating a composite list of the techniques, so stay tuned!</p>
-
-						<p>In other news, I've discovered that I trip on nearly everything when I teach. The comedic relief comes in handy.</p>
-
-					<p class="back_top"><a href="#top">Back to Top</a></p>
-
-
-
-				</div>
-
-				<a name="Week3"></a>
-				
-				<div class="col-md-4">
-
-					<div class="thumbnail portfolio-thumbnail">
-							<a href="http://www.storytellingwithdata.com/blog/2017/3/29/declutter-this-graph">
-							<img src="assets/Week3_LectureActivity.png"
-							alt="" />
-						</a>
-					</div>
-				
-				</div>
-
-				<div class="col-md-8">
-				
-					<h2 class="page-header">Week 3 <i>Visual Storytelling and Data Journalism</i></h2>
-
-
-					<h4 class="">Readings</h4>
-					
-						<p><a href="http://www.storytellingwithdata.com/blog/2017/3/22/so-what">So What?</a>, <i>Cole Nussbaumer Knaflic</i> from <a href="http://www.storytellingwithdata.com/">Storytelling with Data</a></p>
-
-						<p><a href="https://www.nytimes.com/interactive/2014/12/29/us/year-in-interactive-storytelling.html">2014 The Year in Interactive Storytelling, Graphics and Multimedia</a>, <i>New York Times</i></p>
-						
-						<p><a href="http://viz.wtf/">WTF Visualizations</a>, @WTFViz</p>
-
-						<p><a href="http://cartographicperspectives.org/index.php/journal/article/view/cp84-denil">Storied Maps</a>, <i>Mark Denil</i></p>
-
-
-					<h4 class="teaching_outline">Free Write and Discussion</h4>
-						
-						<h4 ><i>Free Write #4</i></h4>
-
-						<ul>
-							<li><p>In <i><a href="http://www.storytellingwithdata.com/blog/2017/3/22/so-what">So What?</a></i>, how does the author differentiate from story and Story? Furthermore, what is the goal of story in data journalism?</p></li>
-
-							<li><p>How could you make <a href="assets/DWI_rates.png">this graphic</a> more effective?</p></li>
-
-							<li><p>How do maps fit in to <a href="https://www.nytimes.com/interactive/2014/12/29/us/year-in-interactive-storytelling.html">The Year in Interactive Storytelling, Graphics and Multimedia</a> examples?</p></li>
-	
-							<li><p>Thoughts on the <a href="http://cartographicperspectives.org/index.php/journal/article/view/cp84-denil">Denil</a> piece? Do you buy his argument?</p></li>
-
-					</ul>
-
-					<h4 class="teaching_outline">Objects</h4>
-						
-						<h4><i>Bivariate and Multivariate Maps</i></h4>
-
-						<p>In addition to visual storytelling and data journalism, we explored bivariate and multivariate maps. I asked students to submit bivariate and multivariate map examples as their <i>Object</i> for this week. After completing the lecture activity below, we discussed strategies for successful map design using two or more datasets. Drawing on <a href="assests/BivariateMaps_Roth2015.png">Marty Elmer's master's thesis</a>, we discussed separable, integral, configural, and assymetrical bivariate map types and when to use them!</p>
-
-						<p>Keeping the theme of this week in mind, the goal is to effectively and efficiently tell a multidimensional story with data.</p>
-
-					<h4 class="teaching_outline">Lecture Activity</h4>
-						<p>This week's lecture activity was inspired by <a href="http://www.storytellingwithdata.com/blog/2017/3/29/declutter-this-graph">Storytelling with Data</a>.</p>
-
-						<p><a href="assets/Fall2017_572_LectureActivities_Week3_StoriesData.pdf">Lecture Activity Handout</a></p>
-						<p><a href="assets/Fall2017_572_LectureActivities_Week2_Grid.pdf">Data Example for Adobe Illustrator</a></p>
-						<p><a href="assets/Week3_LectureActivity_Outcome.png">Outcome Example</a></p>
-
-					<h4 class="teaching_outline">Notes and Reflections</h4>
-					
-					<p>Still reflecting...</p>
-
-					<p class="back_top"><a href="#top">Back to Top</a></p>
-
-				</div>
-
-				
-				<a name="Week4"></a>
-				
-				<div class="col-md-4">
-
-					<div class="thumbnail portfolio-thumbnail">
-							<a href="https://robertdarlington.com/maps/">
-							<img src="assets/Fall2017_LectureActivity_Week4_Perception_Outcome.png"
-							alt="" />
-						</a>
-							<p>This is an outcome from the Lecture Activity. More info on this map and cartographer (Robert Darlington) can be found <a href="https://robertdarlington.com/maps/">here</a>.</p>
-					</div>
-				
-				</div>
-
-				<div class="col-md-8">
-				
-					<h2 class="page-header">Week 4 <i>Perception and Visual Enhancement</i></h2>
-
-
-					<h4 class="">Readings</h4>
-					
-						<p><a href="https://www.amazon.com/How-Maps-Work-Representation-Visualization/dp/157230040X">"An Information-Processing View of Visiona and Visual Cognition"</a> in How Maps Work: Representation, Visualization, and Design, <i>Alan MacEachren</i></p>
-
-						<p><a href="https://www.amazon.com/How-Maps-Work-Representation-Visualization/dp/157230040X">"How Maps are Seen"</a> in How Maps Work: Representation, Visualization, and Design, <i>Alan MacEachren</i></p>
-
-						<p><a href="http://colororacle.org/design.html">"Color Design for the Color Vision Impaired"</a> in Cartographic Perspectives, <i>Bernhard Jenny and Nathaniel Vaughn Kelso</i></p>
-
-					<h4 class="teaching_outline">Free Write and Discussion</h4>
-						
-						<h4><i>Free Write #5</i></h4>
-
-						<p>This week's Free Write focused on the first lab assignment. Students are creating a longform infographic and are asked to utilized visual storytelling techniques to effectively convey a narrative. They are asked to include a bivariate map. As such, we used this Free Write as a "check in". This helps the students solidify their topic and data sources. Additionally, this allows us (the TA and I) to better understand individual progress as well as any issues that have arisen.</p>
-
-						<ul>
-							<li><p>What is the central argument or storyline in your Lab 1?</p></li>
-
-							<li><p>What two datasets are you using for your bivariate/multivariate map?</p></li>
-
-							<li><p>Are your datasets <a href="assets/BivariateMaps_Roth2015.png">separable, integral, configural, or assymetical?</a></p></li>
-
-							<li><p>Which bivariate map combination makes sense for your data?</p></li>
-
-							<li><p>What software program are you in (ArcMap or Illustrator) and what are your next steps?</p></li>
-
-						</ul>
-
-					<h4 class="teaching_outline">Objects</h4>
-						
-						<h4><i>Personal Map that Could Use Perceptual Enhancement</i></h4>
-
-						<p>This week, I asked students to submit their final project (or another map) from Geography 370, our intro to cartography course at UW–Madison. Students used this map <i>Object </i>in the lecture activity on Friday. I have found that revisiting and critically examining maps that I've created in the past is extremely helpful. After you get over the "what in the world was I thinking", this can be really productive. Taking a break and returning to past work is refreshing because when you're deep in the work itself, it's hard look beyond the page. Additionally, I want students to get in the practice of revisions. At the end of the semester, they will put together online portfolios. By digging up their old projects, I hope they edit and post them online as something to be proud of.</p>
-
-						<p></p>
-
-					<h4 class="teaching_outline">Lecture Activity</h4>
-
-						<p><a href="assets/Fall2017_572_LectureActivities_Week4_Perception_Updated.pdf">Lecture Activity Handout</a></p>
-						<p><a href="assets/Fall2017_LectureActivity_Week4_Perception_Outcome.png">Outcome Example</a></p>
-
-						<p><a href="http://colororacle.org/index.html">Color Oracle</a></p>
-
-						<p>This lecture activity could be split into two. I was hoping students would have enough time to actually edit their map, but we ran out of time. Instead of editing the map, I had students reflect on potential strategies for future edits.</p>
-
-					<h4 class="teaching_outline">Notes and Reflections</h4>
-					
-					<p>This week was really fun! I planned this week's Lecture Activity early this summer after listening to <a href="https://somethingaboutmaps.wordpress.com/">Daniel Huffman's</a> ICC presentation on the <a href="http://www.eventscribe.com/uploads/eventScribe/PDFs/2017/2682/419842.pdf">Ecological Atlas of the Bering, Chukchi, and Beaufort Seas</a>. If you haven't seen the atlas yet, you should really check it out. It's absolutely stunning. During his talk on cartographic design for marine maps, Daniel focused heavily on universal and effective design for the color impaired. Daniel views such design as an ethical requirement that emphasizes inclusion. Roughly eight percent of the population is effected by some type of color deficiency and as visual designers, this is something that needs to be taken into account. And to be honest, this is something I haven't always prioritized. As such, I built a portion of the Lecture Activity around design principles for color impairment.</p>
-
-					<p>I should probably back up a bit though. Our lens or theme for the week was perception and to be honest (again), this lecture was a lot to take in when I took the class. When I took the course, one of the primary text's was Alan MacEachren's <a href="https://www.amazon.com/How-Maps-Work-Representation-Visualization/dp/157230040X">How Maps Work</a>. How Maps Work is a fantastic and comprehensive text that interrogates how maps are seen, how they are understood, and how they create meaning. It is also extremely rich, yet dense and for me, it was difficult to digest in large chunks. As such, I had students review the text and after our Free Write, I lectured for a good portion of the class. This isn't something I want to do very often, but I wanted to outline key points and take aways from the text. We defined perception and explored vision, the eye, eye-brain physiology, visual stimuli, and Marr's theory of vision. We linked Marr's theory of visions (a series of abstractions of the visual scene) to cartographic principles such as contrast, grouping, and figure/ground. We are going to wrap up our notes on gestalt principles and grouping this week.</p>
-
-					<p>This week took more prep than normal for me. I found that I was a little uneasy with the topic and doubted my ability to explain these concepts effectively. After rereading <a href="https://www.amazon.com/How-Maps-Work-Representation-Visualization/dp/157230040X">How Maps Work</a> and Rob Roth's lecture, I turned to good old YouTube. I watched a series of lectures from psychology 101 courses and physiological descriptions of the eye and image processing. All in all, I think it went fine and it was actually fun. Going back through this material really helped ingrain why perception is so important. Of course vision can be deceptive and perhaps limiting if we look at it in isolation, but incorporating a perceptual lens in our cartographic work can be really useful! It might take a few reviews to let it sink it though.</p>
-
-					<p>Students also played around with color vision impairment filters in Photoshop and Illustrator this week in the Lecture Activity. I also finally downloaded <a href="http://colororacle.org/index.html">Color Oracle</a>. You should definitely check this one out! Thanks for checking in!</p>
-
-					<p class="back_top"><a href="#top">Back to Top</a></p>
-
-				</div>
-
-				<a name="Week5"></a>
-				
-				<div class="col-md-4">
-
-
-				</div>
-
-				<div class="col-md-8">
-				
-					<h2 class="page-header">Week 5 <i>Visual Complexity and Terrain</i></h2>
-
-					<h4 class="">Readings</h4>
-					
-						<p>Students did not have assigned readings for Wednesday because they had a quiz. After the quiz, I jumped into lecture notes instead of discussion.</p>
-
-
-					<h4 class="teaching_outline">Free Write and Discussion</h4>
-						
-						<h4><i>No Free Write this Week</i></h4>
-
-						<p>We had our first open note quiz this week in lieu of a Free Write. The quiz covered all lecture material, readings, discussions, and lecture activities completed. I'm happy to send my quiz to any interested instructors! Send me an email or message me on <a href="https://twitter.com/meghankellymaps">Twitter</a>!</p>
-
-
-					<h4 class="teaching_outline">Objects</h4>
-						
-						<h4><i>Favorite Terrain Map</i></h4>
-
-						<p>I asked students to submit their favorite terrain map for this week's Object. Students used these maps in the Lecture Activity on Friday. In Lab, they are designing their first terrain map, so I wanted them to be exposed to high quality and unique terrain examples. The discussion thread turned into an effective inspiration board! I will posted a few examples asap.</p>
-
-					<h4 class="teaching_outline">Lecture Activity</h4>
-
-					<h4><i>Breaking Down and Building Up Terrain!</i></h4>						
-
-					<p><a href="assets/Fall2017_572_LectureActivities_Week5_Terrain.pdf">Lecture Activity Handout</a></p>
-						<p><a href="assets/Fall2017_572_LectureActivities_Week5_SpecSheet.docx">Lecture Activity Worksheet</a></p>
-
-					<h4 class="teaching_outline">Notes and Reflections</h4>
-					
-					<p>This week was a little crazy for a number of reasons. Students completed an open note quiz on Wednesday and they had their first lab (a longform infographic that includes a bivariate map) due. As mentioned, the quiz was open note and covered anything and everything from the first five weeks of class. It was worth 10 points and included multiple choice, true/false, matching, definitions, and short essays. Overall, I thought the quiz was pretty fair, but the grades were lower than I expected. There were several students that did really great, a few in the middle, and a few on the lower end. My goal was for students to review their own notes and my lectures notes which are posted online hoping the material would sink in and stay. I framed the quiz as 'free points' because it relied on notes and attendance. Are open note quizzes really 'free points'? Furthermore, are open note quizzes useful for reviewing past materials if students don't take it seriously? Am I overthinking it because I want everyone to do well? Everyone will do better next time with one under their belt, right?</p>
-
-					<p>This week I introduced visual complexity as it relates to visual perception. Visual complexity, information density, and visual overload all directly effect perceptual understanding of the map. We discussed a variety of factors that influence visual overload. Bivariate maps, for example, increase the complexity of the page by asking viewers to digest more than one variable simultaneously. Additionally, the number of features on the map impact map comprehension. We examined visual complexity in thematic maps and infographics that seek to remove all extraneous information. In contrast, reference maps, particularly those that include terrain, seek infomation density and in turn, increase visual complexity.</p>
-
-					<p>On Friday during our Lecture Activity, we dove into terrain mapping technqiues. Terrain provides increasing realism and hyperrealism and allows viewers to connect with/recognize the landscape. Let's be real though. Terrain is sexy. Viewers (and cartographers) really like terrain, but it's also <i>really</i>difficult to create clear visual hierarchy and figure/ground. To help students plan ahead for their second lab, a terrain reference map, students explored the intellectual and visual hierarchies depicted in the terrain maps submitted as Objects. They then created their own symbol/type specification sheet (spec sheet) to help guide their own design. I found this Lecture Activity to be really helpful. Some students took it more seriouesly than others. For many, this was their first time looking at a map layer by layer to better understand the visual hierarchy at play. I hope this activity directly informs their upcoming lab.</p>
-
-					<p>This week was also busy because I was preparing for <a href="http://nacis.org/annual-meeting/current-meeting/">NACIS</a> and trying to get ahead for the class. I am super fornuate though because I have a great TA that ran the show while I was gone. I was able to get some grading down while gone, answer a few emails, and now I'm stuck in Toronto updating this website! Stay tuned for a <a href="http://nacis.org/annual-meeting/current-meeting/">NACIS</a> recap. As usual, I'm extremely exhaustive after the conference and workshops, but I learned a ton! I look forward to incorpoatomg new tools and techniques into the class!</p>
-
-					<p class="back_top"><a href="#top">Back to Top</a></p>
-
-				</div>
-
-				
-				<a name="Week6"></a>
-				
-				<div class="col-md-4">
-				
-				</div>
-
-				<div class="col-md-8">
-				
-					<h2 class="page-header">Week 6 <i>NACIS</i></h2>
-
-					<h3 class="teaching_outline"><a href="http://nacis.org/">NACIS</a></h3>
-					
-						<p>This week I was at <a href="http://nacis.org/annual-meeting//current-meeting/">NACIS</a> or the North American Cartographic Information society meeting in Montréal, Canada. NACIS is an incredible community of academic and industry cartographers. I cancelled my lectures (lab was still held) and spent the week learning from amazing cartographers and their inspiring work. I participated in <a href="">Practical Cartography Day</a> on Tuesday, which consists of short demo/tutorial presentations as well as the main conference. I gave a presentation called <a href="https://nacis2017.sched.com/event/B94e/social-theory-theorie-sociale">Humanzing Maps</a> with my colleagues <a href="https://twitter.com/nicklally?lang=en">Nick Lally</a> and advisor, <a href="https://twitter.com/RobertERoth?lang=en">Rob Roth</a>. I wrapped up the week with some poutine and a Critical GIS workshop at McGill University. All in all, it was a great week.</p>
-
-						<p>Below is a list of some of my favorite presentations, super interesting new tools, and some resources that might be helpful in future course development.</p>
-
-					<h3 class="teaching_outline">Tools and Libraries</h3>
-
-						<h4><i>New and Improved <a href="http://mapshaper.org/">MapShaper</a></i></h4>
-						<p>I've used <a href="http://mapshaper.org/">MapShaper</a> in class and in my own cartographic work as my primary mode of generalizing line work. MapShaper provided a visual means to simplify line work on the fly. The tool was built by Matthew Bloch, a UW–Madison alum currently at the <i>New York Times</i>. Bloch reintroduced the tool as well as a series of command line upgrades that allow the user to perform a variety of map and analysis tasks, including: clip, join, simplify, dissolve, style, etc. Bloch provided example data <a href="http://mapshaper.org/nacis/">here</a>. In the command line window, use tips and help to get started!</p>
-
-
-						<h4 class="teaching_outline"><i><a href="http://drafts.cairncarto.com/nacis2017/index.html">Illustrator Scripts and Shortcuts</a></i></h4>
-						<p>Have you ever wanted to remove all of your clipping masks at once? Or wanted to justify your text without shifting the text left or right? This library of hot keys is for you! Seriouesly, check this one out. The crowd at PDC gasped in awe. <a href="https://twitter.com/jamierob">Jamie Robertson</a> from <a href="https://www.adventurecycling.org/">Adventure Cycling Association</a> curated the library and gave a demo at Practical Cartography Day.</p>
-
-
-
-
-					<h3 class="teaching_outline">Educational Resources</h3>
-
-						<h4><i><a href="https://amtait.github.io/nacis/tait_nacis.pdf">Map Construction: Visual Hierarchy and Layout</a></i></h4>
-
-						<p><a href="https://twitter.com/taitmaps">Alex Tait</a> presented his portion of the Body of Knowledge Project. Alex is well known in cartographic industry and returned to the books to revisit and reorganize mapping concepts around visual hierarchy, map elements, and layout. Be sure to check out the map graphics he includes and stay tuned for more <a href="http://gistbok.ucgis.org/bok-topics/visual-hierarchy-layout-and-map-elements">here</a>.</p>
-
-						
-						<h4 class="teaching_outline"><i><a href="https://twitter.com/hashtag/Practicarto?src=hash&lang=en">#Practicarto</a></i></h4>
-
-						<p><a href="https://twitter.com/pinakographos?lang=en">Daniel Huffman</a> presented <a href="https://nacis2017.sched.com/event/BDkj/practical-cartography-day-early-afternoon-sessions-journee-cartographie-pratique-seances-de-debut-dapres-midi">Sharing Knowledge in Small Bites</a> at NACIS and asked the cartographic community to think of small ways to share knowledge. Everyone has something to share and short 140 character tips, tricks, and demos are super manageble. Check out the hash tag <a href="https://twitter.com/hashtag/Practicarto?src=hash&lang=en">#Practicarto</a> for the wealth of knowledge and don't forget to contribute yourself!</p>
-
-					<p class="back_top"><a href="#top">Back to Top</a></p>
-
-				</div>
-
-
-				
-				<a name="Week7"></a>
-				
-				<div class="col-md-4">
-
-					<div class="thumbnail portfolio-thumbnail" id="icons">
-						<a href="">
-							<img src="assets/icons.png"
-							alt="" />
-						</a>
-					</div>
-				
-				</div>
-
-				<div class="col-md-8">
-				
-					<h2 class="page-header">Week 7 <i>Cognition and Semiotics</i></h2>
-
-
-					<h4 class="">Readings</h4>
-					
-					<p></p>
-
-
-					<h4 class="teaching_outline">Free Write and Discussion</h4>
-						
-						<h4><i>Free Write #7</i></h4>
-
-
-
-
-					<h4 class="teaching_outline">Objects</h4>
-						
-						<h4><i>Icons</i></h4>
-
-						<p></p>
-
-					<h4 class="teaching_outline">Lecture Activity</h4>
-
-					<h4><i>Icon Development</i></h4>						
-
-					<p><a href="assets/Fall2017_572_LectureActivities_Week7.pdf">Lecture Activity Handout</a></p>
-						<p><a href="assets/Fall2017_572_LectureActivities_Week7_Template.ai">Lecture Activity Template</a></p>
-
-					<h4 class="teaching_outline">Notes and Reflections</h4>
-					
-						<p></p>
-
-					<p class="back_top"><a href="#top">Back to Top</a></p>
-				</div>
-
-
-
-				<a name="Week8"></a>
-				
-				<div class="col-md-4">
-
-					<div class="thumbnail portfolio-thumbnail">
-						
-							<img src="assets/LectureActivity8_inspiration_DallasClayton.jpg"
-							alt="" />
-							<p></p>
-							<img src="assets/LectureAcitivity8.png"
-							alt="" />
-							<p></p>
-							<img src="assets/LectureActivity8_zoomed.png"
-							alt="" />
-					
-							<p></p>
-							<p>This is an outcome tbat I put together during the Lecture Activity. The inspiration piece (the first image) was created <a href="https://www.dallasclayton.com/">Dallas Clayton.</a></p>
-
-					</div>
-				
-				</div>
-
-				<div class="col-md-8">
-				
-					<h2 class="page-header">Week 8 <i>Art and Aesthetics</i></h2>
-
-	
-					<h4 class="">Readings</h4>
-					
-						
-
-
-					<h4 class="teaching_outline">Free Write and Discussion</h4>
-						
-						<h4><i>Free Write #8</i></h4>
-
-						<p></p>
-
-
-					<h4 class="teaching_outline">Objects</h4>
-						
-						<h4><i>Inspiring Work of Art (whatatever that means or includes)</i></h4>
-
-						<p></p>
-
-					<h4 class="teaching_outline">Lecture Activity</h4>
-
-					<h4><i>Mapping Aesthetics</i></h4>						
-
-					<p><a href="assets/Fall2017_572_LectureActivities_Week8_Aesthetics.pdf">Lecture Activity Handout</a></p>
-
-					<p><a href="assets/LectureActivity8_Handout.ai">Lecture Activity Worksheet</a></p>
-
-					<p><a href="assets/LectureActivity8_Aesthetics_Handout_Brazil.ai">Lecture Activity Map of Brazil</a></p>
-
-
-					<h4 class="teaching_outline">Notes and Reflections</h4>
-					
-					<p></p>
-
-					<p class="back_top"><a href="#top">Back to Top</a></p>
-
-				</div>
-
 			</div>
 		</div>
+
+		<div class="container">
+			<div class="row"> 
+				<div class="col-md-12 tabs">
+
+					<h4><a href="teaching_coursework.html">Courses and Teaching Materials</a></h4>
+				</div>
+			</div>
+		</div>	
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 projectText">
+
+
+				<img src="assets/teaching.png" style="width:100%" class="projectImage">
+
+				</br>
+
+				<p>If I had to sum up my teaching philosophy in five words, they would be inclusion, active engagement, exploration, feedback, and accountability. </p>
+
+				</br>
+
+				<h4 class="projectPage">Inclusion</h4>
+				<p>Inclusion is my priority. I continually look for ways to create a more inclusive environment that embraces and respects all students and is conducive to multiple learning styles.</p>
+
+				</br>
+
+				<h4 class="projectPage">Active Engagement</h4>
+				<p>Let's be honest. Sometimes mapping fundamentals can be a bit dry. There's only so much you can know about thematic maps. Once you know one or two, the rest come pretty easy with a simple Google search. To mix things up, I limit my lecture time in lieu of free writes, discussions, map critiques, and group activities. I further support active engagement by asking students to help curate course materials.</p>
+
+				</br>
+
+				<h4 class="projectPage">Exploration</h4>
+				<p>I found myself as a cartographer through exploration. With all cartography coursework, there are clear objectives, technologies, and outcomes that I expect students to walk away with, but I also like to make space for exploration. My lecture activities allow students to explore something new, perhaps a new tool, idea, or aesthetic. Students aren't graded on the final outcome, but a brief reflection on the process.</p>
+				</br>
+
+				<h4 class="projectPage">Feedback</h4>
+
+				<p>Feedback is extremely important in any design setting. I try to build in multiple layers of feedback. Short, peer to peer critique and feedback are structured into lab time. Group workshoping for project proposals are great in the lecture room. I also schedule "map parties" where students can work in <a href="">UW Cart Lab</a> and know that there will be others working on the same project. Students also have the opportunity to get feedback from me at any point in time in person or via email!</p>
+
+				</br>
+
+				<h4 class="projectPage">Accountability</h4>
+
+				<p>Map design is hard, super rewarding, and at times, super frustrating. As an instructor, I have pretty high expectations in terms of outcomes but also the amount of time put into a map. Some maps are beautiful and polished, but others might not have gotten there. Did the student learn a new tool? Or did the student try thirteen layouts and seven aesthetic styles? That's even better! All I ask is that students are accountable to their work and process. I ask students to write reflections with each map to enhance transparency and help me better understand their process.</p>
+
+
+				</div>
+			</div>
+		</div>
+
 
 	<footer>
 		<div class="jumbotron">
 			<div class="container">
-				<h3>Meghan Kelly</h3>
+				<h3><b>Meghan Kelly<b></h3>
 				<h4>University of Wisconsin–Madison</h4>
 				<h4>Email: mkelly22@wisc.edu</h4>
 				<h4>Twitter: <a href="https://twitter.com/meghankellymaps?lang=en">@meghankellymaps</a></h4>
@@ -748,9 +132,6 @@
 
      </footer>
 
-<!--put your external script links here-->
-<script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="js/drop.js"> </script>
 
 	</body>
