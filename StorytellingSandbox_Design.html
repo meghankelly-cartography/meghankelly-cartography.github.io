@@ -45,9 +45,9 @@ body {
           <br>
 
           <!-- dropdown -->
-          <select id="dropdown" onchange="myFunction(value)" onchange="updateLegend(value)">
+          <select id="dropdown" onchange="myFunction(value);updateLegend(value)"> <!--SWITCH FROM TWO ONCHANGES TO LOADING BOTH FUNCTIONS AT ONCE  -->
             
-
+            <!--     sources -->
             <option value="Outlet" selected="selected">All Outlets</option>
             <option value="ESRI">ESRI</option>
             <option value="Economist">Economist</option>
@@ -56,6 +56,39 @@ body {
             <option value="Washington Post">Washington Post</option>
             <option value="NYT Print">NYT Print</option>
             <option value="NYT Online">NYT Online</option>
+
+            <!--     variables -->
+            <option value="Projection Class Cylindrical">Projection Class Cylindrical</option>
+
+            <option value="Projection Class Conic">Projection Class Conic</option>
+
+            <option value="Projection Class Planar">Projection Class Planar</option>
+
+            <option value="Projection Class Compromise">Projection Class Compromise</option>
+
+            <option value="Projection Class Unclear">Projection Class Unclear</option>
+
+            <option value="Orientation Conventional">Orientation Conventional</option>
+
+            <option value="Orientation Non-conventional">Orientation Non-conventional</option>
+
+            <option value="Orientation Unknown">Orientation Unknown</option>
+
+            <option value="Perspective Planimetric">Perspective Planimetric</option>
+
+            <option value="Perspective Oblique">Perspective Oblique</option>
+
+            <option value="Scale Municipal">Scale Municipal</option>
+
+            <option value="Scale Regional">Scale Regional</option>
+
+            <option value="Scale Country">Scale Country</option>
+
+            <option value="Scale Continental/Oceanic">Scale Continental/Oceanic</option>
+
+            <option value="Scale World">Scale World</option>
+
+
 
           </select>
 
@@ -99,8 +132,28 @@ body {
 
     //Update Legend
     var updateLegend = function(value){
+      
+      d3.selectAll(".legend").remove() //REMOVE WHATEVER LEGEND THERE WAS
+      var legend = svg.selectAll(".legend") //REWRITE THE LEGEND SVG
+            .data(color.domain())
+          .enter().append("g")
+            .attr("class", "legend")
+            .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
+        // draw legend colored rectangles
+        legend.append("rect")
+            .attr("x", width - 18)
+            .attr("width", 18)
+            .attr("height", 18)
+            .style("fill", color);
 
+        // draw legend text
+        legend.append("text")
+            .attr("x", width - 24)
+            .attr("y", 9)
+            .attr("dy", ".35em")
+            .style("text-anchor", "end")
+            .text(function(d) { return d;})
     }
 
   
@@ -169,6 +222,7 @@ body {
             .attr("cx", xMap)
             .attr("cy", yMap)
             .style("fill", function(d) { return color(cValue(d));}) 
+            .style ("opacity", 0.5)
             .on("mouseover", function(d) {
                 tooltip.transition()
                      .duration(200)
